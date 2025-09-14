@@ -3,6 +3,7 @@
 ・環境構築
 　Dockerビルド
    1, git clone　git@github.com:hiroka-like-flowers/check-test2.git
+       間違えて一度future/firstでコミットしてます
    2, DockerDesktopの立ち上げ
    3,　dockerーcompose up -d --build
       (mysqlにplatform: linux/amd64を追加）
