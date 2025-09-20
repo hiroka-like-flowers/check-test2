@@ -14,10 +14,8 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-Route::get('/register', function () {
-    return view('register');
-});
-Route::get('/update', function () {
-    return view('update');
-});
+Route::get('/products', [ProductController::class, 'index'])->name('products');
+
+Route::get('/register', [ProductController::class, 'register']);
+
+Route::post('/update', [ProductController::class, 'update']);
