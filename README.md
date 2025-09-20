@@ -19,9 +19,10 @@
 　　　　　DB_PASSWORD=laravel_pass
    4, アプリケーションキーの作成
    　　　php artisan key:generate
-   5,
-   6,
-   7,
+   5,マイグレーションの実行
+   　　　php artisan migrate
+   6,シーディングの実行
+   　　　php artisan db:seed
    ・使用技術
    　　・PHP 8.2.29
       ・Laravel Framework 8.83.29
