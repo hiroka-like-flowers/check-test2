@@ -16,6 +16,9 @@ use App\Http\Controllers\ProductController;
 
 Route::get('/products', [ProductController::class, 'index'])->name('products');
 
-Route::get('/register', [ProductController::class, 'register']);
+Route::get('/products/search', [ProductController::class, 'search'])->name('products');
 
-Route::post('/update', [ProductController::class, 'update']);
+
+Route::get('/products/register', [ProductController::class, 'register']);
+
+Route::post('products/{productId}', [ProductController::class, 'update'])->name('update');
