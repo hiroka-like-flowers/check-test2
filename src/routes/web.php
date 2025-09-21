@@ -15,10 +15,14 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::get('/products', [ProductController::class, 'index'])->name('products');
-
-Route::get('/products/search', [ProductController::class, 'search'])->name('products');
-
-
-Route::get('/products/register', [ProductController::class, 'register']);
-
-Route::post('products/{productId}', [ProductController::class, 'update'])->name('update');
+/* 商品一覧 */
+Route::get('/products/search', [ProductController::class, 'search']);
+/* 検索 */
+Route::get('/products/register', [ProductController::class, 'add']);
+/* 商品登録 */
+Route::post('products/{productId}', [ProductController::class, 'store']);
+/* 商品詳細 */
+Route::post('/products/{productId}/update', [ProductController::class, 'update']);
+/* 商品更新 */
+Route::post('/products/{productId}/delete', [ProductController::class, 'destroy']);
+/* 削除 */
