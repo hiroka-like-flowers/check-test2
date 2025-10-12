@@ -13,16 +13,12 @@ use App\Http\Controllers\ProductController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/products', [ProductController::class, 'index'])->name('products');
-/* 商品一覧 */
-Route::get('/products/search', [ProductController::class, 'search']);
-/* 検索 */
-Route::get('/products/register', [ProductController::class, 'add']);
-/* 商品登録 */
-Route::post('products/{productId}', [ProductController::class, 'store']);
-/* 商品詳細 */
-Route::post('/products/{productId}/update', [ProductController::class, 'update']);
-/* 商品更新 */
-Route::post('/products/{productId}/delete', [ProductController::class, 'destroy']);
-/* 削除 */
+Route::prefix('products')->group(function () {
+    Route::get('/', [ProductController::class, 'index']);/* 商品一覧 */
+    Route::get('search', [ProductController::class, 'search'])->name('products.search');/* 検索 */
+    Route::get('register', [ProductController::class, 'showCreateForm'])->name('products.register');/* 商品登録画面 */
+    Route::post('register', [ProductController::class, 'create'])->name('products.create');/* 商品登録 */
+    Route::get('{productId}', [ProductController::class, 'show'])->name('products.show');/* 商品詳細 */
+    Route::patch('{productId}/update', [ProductController::class, 'update'])->name('products.update');/* 商品更新 */
+    Route::delete('{productId}/delete', [ProductController::class, 'destroy']);/* 削除 */
+});
