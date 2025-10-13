@@ -1,0 +1,58 @@
+/* 共通部分のapp.blade.php用のcss */
+.header {
+    background: #fff;
+}
+
+
+.header__inner {
+    margin: 0 auto;
+    max-width: 1230px;
+    padding: 20px 15px;
+}
+
+
+.header__logo {
+    color: rgb(255, 225, 0);
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: solid;
+}
+
+body {
+    background-color: #efebeb;
+}
+.main-form {
+    margin: 0 auto;
+    max-width: 1230px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.pagination li:not(.active) {
+    border: 1px solid rgb(229, 226, 226);
+    padding: 4px 12px;
+}
+
+.pagination li:not(:last-child) {
+    border-right: none;
+}
+
+.pagination a {
+    color: black;
+    text-decoration: none;
+}
+
+.pagination__link {
+    text-decoration: none;
+}
+
+.active {
+    padding: 4px 12px;
+    border: 1px solid #fbdb4b;
+    background-color: #fbdb4b;
+    color: white;
+}
