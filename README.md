@@ -32,5 +32,5 @@
 <img width="1764" height="600" alt="image" src="https://github.com/user-attachments/assets/e481815b-66e6-4843-aebb-5bc40258f7b4" />
 
 ・URL
-　　・開発環境 http://localhost:8080/
+　　・開発環境 http://localhost:8084/
 　　・phpMyAdmin http://localhost:8081/
