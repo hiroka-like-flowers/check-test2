@@ -1,0 +1,192 @@
+.update {
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+.edit__group-left {
+    text-align: left;
+    width: 400px;
+    margin: 10px 10px auto;
+    float: left;
+}
+
+.item-list__title {
+    color: rgb(0, 213, 255);
+}
+
+.item__img-output {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.edit-form__group-bottom {
+    margin: 0 15px;
+}
+
+.edit-form__input-3 {
+    background-color: rgb(200, 199, 199);
+    color: black;
+    border-radius: 3px;
+    padding: 5px 10px;
+    border-color: black;
+    margin-top: 10px;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.edit__group-right {
+    float: right;
+    width: 300px;
+    margin: 80px 50px 0 30px;
+}
+
+.edit__group-title {
+    margin-bottom: 10px;
+    font-size: 15px;
+    margin-left: 60px;
+}
+
+.edit__label--item {
+    color: black;
+}
+
+.edit-form__input-1 {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+    width: 400px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(200, 199, 199);
+}
+
+.edit-form__input-2 {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+    width: 400px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(200, 199, 199);
+}
+
+.edit__label--item__season {
+    color: black;
+    margin-left: 10px;
+}
+
+.edit-form__group-season {
+    display: flex;
+    justify-content: space-around;
+    text-align: right;
+}
+
+.form__input-text {
+    margin-left: 20px;
+}
+
+.form__input-text input[type="checkbox"] {
+    appearance: none;
+    color: black;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.form__input-text input[type=checkbox]:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.form__input-text input[type="checkbox"]:checked::after {
+    content: "✔︎";
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.edit__group-center {
+    clear: both;
+    margin-left: 100px;
+}
+
+.form__input-textarea {
+    max-width: 1000px;
+    min-height: 120px;
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+    border: none;
+}
+
+.form__input-textarea textarea {
+    border: none;
+    padding: 50px;
+    height: 150px;
+    width: 1000px;
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    border: 1px solid rgb(200, 199, 199);
+}
+
+.edit-form__error-message {
+    color: red;
+    grid-column: 2;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit__group-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 40px;
+}
+
+.edit__button-back {
+    border-radius: 3px;
+    padding: 10px 45px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: rgba(184, 180, 180, 0.815);
+    box-shadow: #f4f1f1 0px 4px 0px 0px;
+    text-decoration: none;
+}
+
+.edit__button-send {
+    border-radius: 3px;
+    padding: 10px 45px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(255, 225, 0);
+    box-shadow: #f4f1f1 0px 4px 0px 0px;
+}
+
+.delete__button {
+    border-radius: 3px;
+    padding: 5px 5px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(200, 199, 199);
+    box-shadow: #f4f1f1 0px 4px 0px 0px;
+    margin-left: 750px;
+}

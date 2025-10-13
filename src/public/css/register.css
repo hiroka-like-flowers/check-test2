@@ -1,0 +1,159 @@
+.edit-form__title {
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.edit {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.edit__group {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.edit__group-title {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.edit__label--item {
+    color: black;
+    display: inline-block;
+}
+
+.edit__label--required {
+    display: inline-block;
+    color: white;
+    background-color: red;
+    border-radius: 3px;
+    padding: 2px 6px;
+}
+
+.edit__label--selects {
+    display: inline-block;
+    color: red;
+}
+
+.edit-form__group {
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.edit-form__input-1 {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding: 20px;
+    border: none;
+    width: 500px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(200, 199, 199);
+}
+
+.edit-form__input-2 {
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    padding: 10px;
+    border: none;
+    width: 280px;
+    border: 1px solid rgb(200, 199, 199);
+}
+
+.edit-form__input-3 {
+    background-color: rgb(200, 199, 199);
+    color: black;
+    border-radius: 3px;
+    padding: 6px 10px;
+    border-color: black;
+}
+
+.previewArea {
+    margin-top: 10px;
+}
+
+.previewImage img {
+    display: none;
+    max-width: 200px;
+    border: 1px solid rgb(200, 199, 199);
+}
+
+.form__input-text input[type="checkbox"] {
+    appearance: none;
+    color: black;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.form__input-text[type=checkbox]:checked {
+    background-color: black;
+    border-color: black;
+}
+
+.form__input-text input[type="checkbox"]:checked::after {
+    content: "✔︎";
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.form__input-textarea textarea {
+    border: none;
+    padding: 50px;
+    width: 600px;
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    border: 1px solid rgb(200, 199, 199);
+}
+
+.edit-form__error-message {
+    color: red;
+    grid-column: 2;
+    gap: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit__group-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 40px;
+}
+
+.edit__button-back {
+    border-radius: 3px;
+    padding: 10px 45px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(200, 199, 199);
+    box-shadow: #f4f1f1 0px 4px 0px 0px;
+    text-decoration: none;
+}
+
+.edit__button-send {
+    border-radius: 3px;
+    padding: 10px 45px;
+    border: none;
+    cursor: pointer;
+    color: black;
+    background-color: rgb(255, 225, 0);
+    box-shadow: #f4f1f1 0px 4px 0px 0px;
+}
